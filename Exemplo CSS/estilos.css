@@ -29,5 +29,19 @@ button.botao {
     font-size: 16px;
 }
 
+.container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: lightgray;
+ }
+
+ .item {
+     background-color: tomato;
+     border-radius: 4px;
+     height: 100px;
+     width: 100px;
+ }
 
     
