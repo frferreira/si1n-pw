@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+</head>
+<body>
+   
+   <input type="number" id="anoNascimento" placeholder="Digite o ano de nascimento">
+    <button onmousemove="TesteComDeclaracaoVariavel()" onclick="calcularIdade()">Calcular Idade</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularIdade() {
+            var anoAtual = new Date().getFullYear();
+            var anoNascimento = document.getElementById("anoNascimento").value;
+            var idade = anoAtual - anoNascimento;
+            document.getElementById("resultado").innerText = "Sua idade é: " + idade + " anos";
+        }
+
+
+        function TesteComDeclaracaoVariavel() {
+
+            console.log ('Valor de x :', x)
+
+            {
+                var x = 20;
+                x = x + 5; 
+
+                var y = 10; 
+                y = y +  5
+               
+            }
+
+            console.log('Valor de x depois do bloco', x)
+
+            console.log('Valor de y depois do bloco ', y)
+
+
+        }
+    </script>
+</body>
+</html>
