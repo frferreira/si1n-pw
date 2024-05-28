@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visite Paraty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <header>
+        <div class="limita-secao">
+            <img src="img/logo.png" alt="logo">
+
+            <nav>
+                <a href="index.html" target="_parent">Home</a>
+                <a href="contato.html" target="_parent">Contato</a>
+            </nav>
+        </div> <!--#### .limita-secao ####-->
+    </header>
+
+    <main>
+        <section class="secao-capa">
+            <div>
+                <h1>Paraty</h1>
+                <h2>Venha visitar</h2>
+            </div>
+        </section> <!--#### .secao-capa ####-->
+
+        <section id="contato">
+            <div class="main-conteiner">
+                <form class="formulario" action="mailto:fabricio.ferreira@uvv.br" method="post">
+                    <p>Fomulário para Contato</p>
+                    <div class="field">
+                        <label for="">Nome do usuário</label>
+                        <input type="text" name="nome-usuario" id="nome-usario01" size="40" maxlength="30" value=""
+                            placeholder="Digite o nome do usuário" required>
+                    </div>
+                    <div class="field">
+                        <label for=""> Data Nascimento:</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div>
+                        <span>Comentário:</span>
+                        <textarea name="comentário" cols="50" rows="10" placeholder="Escreva aqui um comentário"
+                            readonly></textarea>
+                    </div>
+
+
+
+                    <div class="field">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="field">
+                        <span>Tel:
+                            <input type="tel" id="tel" name="Tel" placeholder="(XX) XXXX-XXXX"> </span>
+                        <div class="field">
+                            <span> Melhor horário para contato:</span>
+                            <span>Das:
+                                <input type="time" name="time" id="time">
+                                as:
+                                <input type="time" name="time" id="time"> </span>
+                        </div>
+                    </div>
+
+
+                    <div class="field radiobox">
+                        <span>Deseja receber nossas novidades?</span>
+                        <input type="radio" name="opcao1" value="yes"> sim
+                        <input type="radio" name="opcao1" value="no"> Não
+                    </div>
+
+
+                    <div class="field">
+
+                        <label for="">Região de interesse: </label>
+
+                        <select name="locais" size="5" multiple>
+                            <option value="">Selecione</option>
+                            <option value="serrana"> Serrana</option>
+                            <option value="praias">Parias</option>
+                            <option value="gvitoria">Grande Vitória</option>
+                            <option value="guarapari">Guarapari</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <span for="">Selecione o tipo de conteúdo:
+
+                        <div class="check">
+                            <input type="checkbox" name="auto" value="Auto"> Automóveis
+                            <input type="checkbox" name="empresa" value="empresa1"> Negócio e Finanças
+                            <input type="checkbox" name="musica"> Música
+                            <input type="checkbox" name="esporte"> Esporte
+                        </div>
+                    </span>
+                    </div>
+
+                    <div class="button">
+
+                        <input type="submit" value="Enviar e-mail">
+
+                        <input type="reset" value="Limpar">
+
+                        <input type="button" value="Voltar">
+                    </div>
+
+        </section><!--#### #galeria ####-->
+    </main>
+
+    <footer>
+        <div class="limita-secao">
+            Copyright 2022 © - Prefeitura de Paraty™
+        </div> <!--#### .limita-secao ####-->
+    </footer>
+</body>
+
+</html>
